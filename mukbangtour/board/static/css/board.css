@@ -1,9 +1,18 @@
 .page-header1 {
     color: rgb(0, 0, 0);
     padding-left: 15px;
+    padding-right: 15px;
     padding-top: 10px;
     font-family: 'East Sea Dokdo';
+    text-align: right;
 }
+
+.page-header1 a {
+    color: black;
+    font-size: 24px;
+    vertical-align: 0%;
+}
+
 .page-header2 {
     background-color: rgba(240, 0, 0, 0.995);
     color: rgb(0, 0, 0);

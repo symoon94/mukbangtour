@@ -15,7 +15,7 @@ SECRET_KEY = 'vbrckenv@t9$t4sez_fd3fm$#t40h^^tm7vvxp==jpql(k3*o&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = [127.0.0.1', '.herokuapp.com]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -58,6 +58,13 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mukbangtour.wsgi.application'
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 DATABASES = {
     'default': {
