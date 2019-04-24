@@ -1,4 +1,4 @@
-#import dj_database_url
+import dj_database_url
 
 import os
 
@@ -13,9 +13,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'vbrckenv@t9$t4sez_fd3fm$#t40h^^tm7vvxp==jpql(k3*o&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [ ] #'127.0.0.1', '.herokuapp.com'
+ALLOWED_HOSTS = [ '127.0.0.1', '.herokuapp.com' ] #'127.0.0.1', '.herokuapp.com'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -59,23 +59,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mukbangtour.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'munsuyeong',
-#         'USER': 'symoon94',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
-#         'PORT': '',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'munsuyeong',
+        'USER': 'symoon94',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -119,5 +119,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 LOGIN_REDIRECT_URL = '/'
 
-# db_from_env = dj_database_url.config(conn_max_age=500)
-# DATABASES['default'].update(db_from_env)
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
