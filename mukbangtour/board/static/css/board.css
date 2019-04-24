@@ -1,0 +1,104 @@
+.page-header1 {
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: 'East Sea Dokdo';
+}
+.page-header2 {
+    background-color: rgba(240, 0, 0, 0.995);
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'East Sea Dokdo';
+}
+.logout {
+    color: rgb(0, 0, 0);
+    margin-left: 80%;
+    font-size: 30px;
+}
+
+.logout a {
+    color: rgb(255, 178, 34);
+}
+
+.login {
+    color: rgb(255, 178, 34);
+    margin-left: 90%;
+    font-size: 30px;
+}
+
+h1 a {
+    color: floralwhite;
+    font-size: 100pt ;
+}
+
+h2 {
+    font-size: 60pt ;
+}
+
+h3 a {
+    font-size: 40pt ;
+    color: rgba(238, 116, 71, 0.502);
+}
+
+
+body {
+    padding-left: 15px;
+}
+
+.post {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+}
+
+.post a {
+    color: rgb(0, 0, 0);
+}
+
+.post h3 {
+    border-top: 3px solid #efefef;
+}
+
+.cont {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20;
+}
+
+.date {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13;
+}
+
+.text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30;
+}
+
+.comment {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14;
+}
+
+/* Style buttons */
+.btn {
+    background-color: rgba(0, 0, 0, 0); /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 13px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(227, 227, 227);
+  }
+
+  .btn-default {
+      background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 20%);
+  }
+
+  .comment {
+    margin: 20px 0px 20px 20px;
+}
