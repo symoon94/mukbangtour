@@ -23,8 +23,8 @@ ipython-genutils==0.2.0
 jedi==0.13.2
 kiwisolver==1.0.1
 lxml==4.3.3
-matplotlib==3.0.3
-mkl-fft==1.0.10
+# matplotlib==3.0.3
+# mkl-fft==1.0.10
 mkl-random==1.0.2
 numpy==1.16.2
 olefile==0.46
