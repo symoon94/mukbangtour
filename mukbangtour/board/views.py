@@ -76,7 +76,7 @@ def comment_new(request, pk):
         form = CommentForm()
     return render(request, 'board/comment_edit.html', {'form':form})
 
-@login_required
+#@login_required
 def comment_approve(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
